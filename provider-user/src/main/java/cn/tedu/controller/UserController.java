@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 	@RequestMapping("/hello/{name}")
 	public String hello(@PathVariable String name){
+		System.out.println("co");
 		return "provider one="+name;
 	}
 }
